@@ -3,3 +3,178 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li a:hover {
+  color: white;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Text */
+.uppercase {
+  text-transform: uppercase;
+}
+
+.f-14 {
+  font-size: 14px;
+}
+
+/* Colors & Borders */
+.white {
+  color: white;
+}
+
+.grey {
+  color: #717171;
+}
+
+.grey a {
+  color: #717171;
+}
+
+/* Navbar */
+#nav-bar {
+  height: calc(100% - 90px);
+  width: 230px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  justify-content: space-between;
+  background-color: black;
+}
+
+#nav-bar ul {
+  margin: 8px 0;
+}
+
+#nav-bar ul li {
+  line-height: 2.8;
+}
+
+    /* Nav Header */
+.nav-header {
+  padding-top: 20px;
+}
+
+.nav-header img {
+  width: 65%;
+}
+
+    /* Nav Menu */
+.nav-menu img {
+  width: 32px;
+  padding-right: 5px;
+  vertical-align: middle;
+  filter: opacity(70%);
+}
+
+.nav-menu ul li a:hover img{
+  filter: none;
+}
+
+.nav-menu img:hover {
+  filter: none;
+}
+
+.nav-menu img:first-child {
+  margin-bottom: 1px;
+}
+
+    /* Nav Playlist */
+.nav-playlist ul li div {
+  height: 38px;
+  width: 38px;
+  line-height: 34px;
+  margin-right: 5px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  color: black;
+  background-color: #a3a3a3;
+  font-size: 36px;
+}
+
+.nav-playlist ul li a:first-child:hover div {
+  background-color: white;
+}
+
+/* Nav Footer */
+.nav-footer li:first-child {
+  border-bottom: 1px solid #717171;
+}
+
+.nav-footer li:nth-child(2) {
+  margin: 4px 0;
+}
+
+.nav-footer li i {
+  padding: 2px;
+  border: 1px solid #717171;
+  border-radius: 50%;
+  font-size: 8px;
+  vertical-align: text-top;
+}
+
+.nav-footer li a:hover i {
+  border: 1px solid white;
+}
+
+.nav-footer li img {
+  margin-right: 5px;
+  padding: 0 2px;
+  height: 26px;
+  vertical-align: middle;
+  background-color: #717171;
+  border-radius: 50%;
+}
+
+/* Main */
+main {
+  height: calc(100% - 90px);
+  width: calc(100% - 230px);
+  float: left;
+  background-color: #141922;
+}
+
+.main-header {
+  height: 90px;
+  width: calc(100% - 200px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer {
+  height: 90px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #282828;
+}

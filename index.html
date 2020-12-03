@@ -5,22 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SpotifyWeb</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header>
+  <div class="container clearfix">
 
-  </header>
+    <!-- Navbar -->
+    <nav id="nav-bar" class="grey">
 
-  <main>
+      <!-- Logo -->
+      <div class="nav-header">
+        <img src="img/logo.svg" alt="Spotify Logo">
+      </div>
 
-  </main>
+      <!-- Menu -->
+      <div class="nav-menu">
+        <ul>
+          <li><a href="#"><img src="img/home.svg" alt="Home">Home</a></li>
+          <li><a href="#"><img src="img/search.svg" alt="Search">Cerca</a></li>
+          <li><a href="#"><img src="img/libreria.svg" alt="Libreria">La tua libreria</a></li>
+        </ul>
+      </div>
 
-  <footer>
+      <!-- Playlist -->
+      <div class="nav-playlist">
+        <ul>
+          <li class="f-14 uppercase white">Playlist</li>
+          <li>
+            <a class="f-14" href="#"><div>+</div> Crea Playlist</a>
+          </li>
+        </ul>
+        <ul>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+        </ul>
+      </div>
 
-  </footer>
+      <!-- Nav Footer -->
+      <div class="nav-footer">
+        <ul>
+          <li><a href="#"><i class="fas fa-arrow-down"></i> Installa app</a></li>
+          <li class="white f-14"><img src="img/profile.svg" alt="Profile">Leandro</li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <main>
+      <div class="main-header">
+      </div>
+      <div class="main-menu"></div>
+      <div class="main-content"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+    </footer>
+
+  </div>
+
 
 </body>
 </html>
