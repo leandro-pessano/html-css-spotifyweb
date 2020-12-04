@@ -145,7 +145,7 @@ li a:hover {
   overflow-y: auto;
 }
 
-/* Nav Footer */
+    /* Nav Footer */
 .nav-footer li:first-child {
   border-bottom: 1px solid #717171;
 }
@@ -185,14 +185,33 @@ main {
   overflow-y: scroll;
 }
 
+    /* Main Header */
 .main-header {
   height: 90px;
-  width: calc(100% - 200px);
+  width: calc(100% - 230px);
   position: fixed;
   top: 0;
   right: 0;
   z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-upgrade {
+  height: 40px;
+  line-height: 40px;
+  width: 220px;
+  margin-right: 25px;
+  border: 1px solid white;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.btn-upgrade:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 /* Footer */
