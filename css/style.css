@@ -25,6 +25,7 @@ li a:hover {
 .container {
   height: 100vh;
   width: 100%;
+  overflow: hidden;
 }
 
 .clearfix::after {
@@ -92,20 +93,27 @@ li a:hover {
   filter: opacity(70%);
 }
 
-.nav-menu ul li a:hover img{
-  filter: none;
-}
-
 .nav-menu img:hover {
   filter: none;
 }
 
-.nav-menu img:first-child {
+.nav-menu ul li a:hover img{
+  filter: none;
+}
+
+.nav-menu .home {
+  border-left: 3px solid #adff2f;
+  position: relative;
+  left: -20px;
+}
+
+.nav-menu .home img {
+  margin-left: 16px;
   margin-bottom: 1px;
 }
 
     /* Nav Playlist */
-.nav-playlist ul li div {
+.nav-add-playlist ul li div {
   height: 38px;
   width: 38px;
   line-height: 34px;
@@ -118,8 +126,14 @@ li a:hover {
   font-size: 36px;
 }
 
-.nav-playlist ul li a:first-child:hover div {
+.nav-add-playlist ul li a:first-child:hover div {
   background-color: white;
+}
+
+.nav-playlist {
+  flex-grow: 2;
+  min-height: 100px;
+  overflow-y: auto;
 }
 
 /* Nav Footer */
@@ -156,8 +170,10 @@ li a:hover {
 main {
   height: calc(100% - 90px);
   width: calc(100% - 230px);
+  padding-top: 90px;
   float: left;
   background-color: #141922;
+  overflow-y: scroll;
 }
 
 .main-header {
