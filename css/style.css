@@ -43,6 +43,15 @@ li a:hover {
   text-transform: uppercase;
 }
 
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  padding: 10px 0;
+  font-size: 16px;
+}
+
 .f-14 {
   font-size: 14px;
 }
@@ -222,7 +231,7 @@ main {
 }
 
 .main-menu ul {
-  padding: 0 40px;
+  width: 100%;
   line-height: 40px;
   display: flex;
   justify-content: center;
@@ -243,6 +252,30 @@ main {
   left: 50%;
   transform: translateX(-50%);
   background-color: #adff2f;
+}
+
+    /* Main Content */
+.main-content section{
+  padding: 20px;
+}
+
+.main-content .cover-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-content .cover {
+  padding-top: 20px;
+  width: calc(100% / 6 - 16px);
+  text-align: center;
+}
+
+.cover:not(:last-child) {
+  margin-right: 8px;
+}
+
+.cover img {
+  width: 100%;
 }
 
 /* Footer */
