@@ -19,20 +19,21 @@
 
       <!-- Logo -->
       <div class="nav-header">
-        <img src="img/logo.svg" alt="Spotify Logo">
+        <img class="hidden-xs" src="img/logo.svg" alt="Spotify Logo">
+        <img class="show-xs" src="img/logo-small.svg" alt="Spotify Logo">
       </div>
 
       <!-- Menu -->
       <div class="nav-menu">
         <ul>
-          <li class="home"><a href="#"><img src="img/home.svg" alt="Home">Home</a></li>
-          <li><a href="#"><img src="img/search.svg" alt="Search">Cerca</a></li>
-          <li><a href="#"><img src="img/libreria.svg" alt="Libreria">La tua libreria</a></li>
+          <li class="home"><a href="#"><img src="img/home.svg" alt="Home"><span class="hidden-xs">Home</span></a></li>
+          <li><a href="#"><img src="img/search.svg" alt="Search"><span class="hidden-xs">Cerca</span></a></li>
+          <li><a href="#"><img src="img/libreria.svg" alt="Libreria"><span class="hidden-xs">La tua libreria</span></a></li>
         </ul>
       </div>
 
       <!-- Add Playlist -->
-      <div class="nav-add-playlist">
+      <div class="nav-add-playlist hidden-xs">
         <ul>
           <li class="f-14 uppercase white">Playlist</li>
           <li>
@@ -42,7 +43,7 @@
       </div>
 
       <!-- Playlist -->
-      <div class="nav-playlist">
+      <div class="nav-playlist hidden-xs">
         <ul class="list">
           <li><a href="#">Nome Playlist</a></li>
           <li><a href="#">Nome Playlist</a></li>
@@ -58,8 +59,8 @@
       <!-- Nav Footer -->
       <div class="nav-footer">
         <ul>
-          <li><a href="#"><i class="fas fa-arrow-down"></i> Installa app</a></li>
-          <li class="white f-14"><img src="img/profile.svg" alt="Profile">Leandro</li>
+          <li><a href="#"><i class="fas fa-arrow-down"></i> <span class="hidden-xs">Installa app</span></a></li>
+          <li class="white f-14"><img src="img/profile.svg" alt="Profile"><span class="hidden-xs">Leandro</span></li>
         </ul>
       </div>
     </nav>
