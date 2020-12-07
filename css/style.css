@@ -61,6 +61,10 @@ h3 {
   color: white;
 }
 
+.lgrey {
+  color: #c1c1c1
+}
+
 .grey {
   color: #717171;
 }
@@ -318,12 +322,145 @@ main {
 footer {
   height: 90px;
   width: 100%;
+  padding: 10px;
   position: fixed;
   left: 0;
   bottom: 0;
+  display: flex;
+  justify-content: space-between;
   background-color: #282828;
 }
 
+footer a:hover ,
+footer i:hover {
+  color: white;
+}
+
+    /* Left */
+footer .track {
+  width: 210px;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+footer .track img {
+  height: 100%;
+  margin-right: 10px;
+}
+
+footer .track>div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .track i {
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+footer .track a:hover ,
+footer .track i:hover {
+  color: white;
+}
+
+footer .track a:hover {
+  text-decoration: underline;
+}
+
+    /* Center */
+footer .control {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .control>div:first-child {
+  display: flex;
+  align-items: center;
+}
+
+footer .control i {
+  margin: 0  12px 10px;
+  font-size: 16px;
+}
+
+footer .control i:nth-child(3) {
+  font-size: 30px;
+}
+
+footer .control>div:nth-child(2) {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .control>div:nth-child(2)::before {
+  content: "0:25";
+}
+
+footer .control>div:nth-child(2)::after {
+  content: "4:35";
+}
+
+footer .control hr {
+  width: 45%;
+  height: 4px;
+  margin: 0 20px;
+  position: relative;
+  background-color: #5a5a5a;
+  border: none;
+  border-radius: 5px;
+}
+
+footer .control hr::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 20%;
+  background-color: #c1c1c1;
+}
+
+
+    /* Right */
+footer .options {
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .options i {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+footer .options hr {
+  width: 60%;
+  height: 4px;
+  position: relative;
+  background-color: #5a5a5a;
+  border: none;
+  border-radius: 5px;
+}
+
+footer .options hr::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 20%;
+  background-color: #c1c1c1;
+}
 
 /* Responsiveness  */
 @media screen and (max-width: 1200px) {
@@ -341,6 +478,18 @@ footer {
 @media screen and (max-width: 870px) {
   .main-content .item {
     width: calc(100% / 2 - 8px);
+  }
+
+  footer .track {
+    width: 25%;
+  }
+
+  footer .track i {
+    display: block;
+  }
+
+  footer .options {
+    width: 28%;
   }
 }
 
