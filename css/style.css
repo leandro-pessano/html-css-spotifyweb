@@ -429,6 +429,27 @@ footer .control hr::before {
   background-color: #c1c1c1;
 }
 
+footer .control hr:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 20%;
+  background-color: #adff2f;
+}
+
+footer .control hr:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -2.5px;
+  left: 20%;
+  height:10px;
+  width: 10px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50%;
+}
 
     /* Right */
 footer .options {
@@ -460,6 +481,28 @@ footer .options hr::before {
   height: 100%;
   width: 20%;
   background-color: #c1c1c1;
+}
+
+footer .options hr:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 20%;
+  background-color: #adff2f;
+}
+
+footer .options hr:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -2.5px;
+  left: 20%;
+  height:10px;
+  width: 10px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50%;
 }
 
 /* Responsiveness  */
