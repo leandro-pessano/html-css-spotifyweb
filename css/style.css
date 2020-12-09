@@ -620,3 +620,13 @@ footer .options hr:hover::after {
     flex-direction: column;
   }
 }
+
+@media screen and (max-height:350px) {
+  main {
+     padding: 0;
+  }
+
+  main .main-header {
+    display: none;
+  }
+}
