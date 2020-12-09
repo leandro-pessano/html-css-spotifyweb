@@ -581,10 +581,6 @@ footer .options hr:hover::after {
 }
 
 @media screen and (max-width:480px) {
-  footer .track {
-    width: 25%;
-  }
-
   footer .track img {
     height: 50%;
     margin-right: 5px;
