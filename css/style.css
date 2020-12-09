@@ -115,10 +115,6 @@ h3 {
   filter: opacity(70%);
 }
 
-.nav-menu img:hover {
-  filter: none;
-}
-
 .nav-menu ul li a:hover img{
   filter: none;
 }
@@ -417,6 +413,7 @@ footer .control hr {
   background-color: #5a5a5a;
   border: none;
   border-radius: 5px;
+  overflow: visible;
 }
 
 footer .control hr::before {
@@ -471,6 +468,7 @@ footer .options hr {
   background-color: #5a5a5a;
   border: none;
   border-radius: 5px;
+  overflow: visible;
 }
 
 footer .options hr::before {
