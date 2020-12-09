@@ -579,3 +579,44 @@ footer .options hr:hover::after {
     font-size: 70px;
   }
 }
+
+@media screen and (max-width:480px) {
+  footer .track {
+    width: 25%;
+  }
+
+  footer .track img {
+    height: 50%;
+    margin-right: 5px;
+  }
+
+  footer .track a {
+    font-size: 10px;
+  }
+
+  footer .track i {
+    font-size: 12px;
+  }
+
+  footer .control i {
+    margin: 0  8px 10px;
+    font-size: 12px;
+  }
+
+  footer .control>div:nth-child(2) {
+    font-size: 10px;
+  }
+
+  footer .control hr {
+    margin: 0 5px;
+  }
+
+  footer .control i:nth-child(3) {
+    font-size: 26px;
+  }
+
+  footer .options {
+    width: 20%;
+    flex-direction: column;
+  }
+}
