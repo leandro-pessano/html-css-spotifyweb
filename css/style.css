@@ -427,12 +427,6 @@ footer .control hr::before {
 }
 
 footer .control hr:hover::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 20%;
   background-color: #adff2f;
 }
 
@@ -482,12 +476,6 @@ footer .options hr::before {
 }
 
 footer .options hr:hover::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 20%;
   background-color: #adff2f;
 }
 
